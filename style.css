@@ -1,0 +1,245 @@
+*,*::before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.container1,.container3{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+.container2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.row1-col1,
+.row1-col3,
+.row3-col1,
+.row3-col3{
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+}
+.row1-col2,
+.row3-col2{
+    background-image: url('images.jpeg');
+    width: 20%;
+    height: 100%;
+}
+.row2-col1,
+.row2-col3{
+    background-image: url('images1.jpeg');
+    width: 40%;
+    height: 100%;
+}
+
+.row2-col2{
+    width: 20%;
+    height: 100%;
+
+}
+
+
+
+
+.row1-col1-child{
+    background-image: url('images3.jpeg');
+    width: 70%;
+    height: 70%;
+}
+.row1-col3-child{
+    background-image: url('images.jpeg');
+    width: 70%;
+    height: 70%;
+}
+
+.row3-col3-child
+{
+    background-image: url('index1.jpeg');
+    width: 70%;
+    height: 70%;
+}
+.row3-col1-child{
+    background-image: url('index5.jpeg');
+    width: 70%;
+    height: 70%;
+}
+.row1-col1-child>div,
+.row1-col3-child>div,
+.row3-col1-child>div,
+.row3-col3-child>div
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 18%;
+    float: right;
+    border-radius: 50%;
+    box-shadow:  0 4px 6px ;
+    transition: all 0.3s cubic-bezier(.25,.8,25,1);
+}
+
+
+
+.current{
+    width: 20px;
+    height: 20px;
+        margin: 23%;
+    border-radius: 50%;
+    box-shadow:  0 4px 6px ;
+    transition: all 0.3s cubic-bezier(.25,.8,25,1);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+ 
+    z-index: 5;
+}
+
+
+/* 1s line  */
+
+.row1-col2>div,
+.row3-col2>div
+{
+   
+    position: relative;
+    width: 33.33%;
+    height: 16.667%;
+    float: left;
+    border: 1px solid black;
+}
+
+.row2-col3>div,
+.row2-col1>div{
+    position: relative;
+    height: 33.33%;
+    width: 16.667%;
+    float: left;
+    border: 1px solid black;
+}
+
+.container-triangle{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-top : 55px  solid transparent;
+    border-left :55px solid #84c21f;
+    border-bottom: 55px solid transparent;
+    position : absolute;
+    left:0;
+    top:5px;
+}
+
+.triangle-left{
+    width: 0;
+    height: 0;
+    border-right: 55px  solid blue;
+    border-bottom :55px solid transparent;
+    border-top: 55px solid transparent;
+    position : absolute;
+    right:0;
+    top:5px;
+}
+
+.triangle-top{
+    width: 0;
+    height: 0;
+    border-left: 55px  solid transparent;
+    border-right :55px solid transparent;
+    border-top: 55px solid yellow;
+    position : absolute;
+    top:0;
+    left:5px;
+}
+.triangle-bottom{
+    width: 0;
+    height: 0;
+    border-left : 55px  solid transparent;
+    border-right :55px solid transparent;
+    border-bottom: 55px solid red;
+    position : absolute;
+    bottom:0;
+    left:5px;
+} 
+
+
+.green{
+    background-color: #84c21f;
+}
+.red{
+    background-color: red;
+}
+.redPawn{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+}
+.circle{
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    margin: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+
+}
+.text{
+
+    width: 80%;
+    height: 50%;
+    margin: 20px 10px;
+    color:8px;
+    font-family: 'Montserrat';
+}
+
+.playing
+{
+    border: 5px solid transparent;
+   
+    animation: rotate-border 10s linear infinite;
+  }
+  
+  @keyframes rotate-border {
+    0% {
+      border-color: black;
+    }
+    25% {
+      border-color: yellow;
+    }
+    50% {
+      border-color: green;
+    }
+    75% {
+      border-color: blue;
+    }
+    100% {
+      border-color: black;
+    }
+  }
