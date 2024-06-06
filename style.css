@@ -35,13 +35,13 @@
 }
 .row1-col2,
 .row3-col2{
-    background-image: url('images.jpeg');
+    background-image: url('asserts/images.jpeg');
     width: 20%;
     height: 100%;
 }
 .row2-col1,
 .row2-col3{
-    background-image: url('images1.jpeg');
+    background-image: url('asserts/images1.jpeg');
     width: 40%;
     height: 100%;
 }
@@ -56,24 +56,24 @@
 
 
 .row1-col1-child{
-    background-image: url('images3.jpeg');
+    background-image: url('asserts/images3.jpeg');
     width: 70%;
     height: 70%;
 }
 .row1-col3-child{
-    background-image: url('images.jpeg');
+    background-image: url('asserts/images.jpeg');
     width: 70%;
     height: 70%;
 }
 
 .row3-col3-child
 {
-    background-image: url('index1.jpeg');
+    background-image: url('asserts/index1.jpeg');
     width: 70%;
     height: 70%;
 }
 .row3-col1-child{
-    background-image: url('index5.jpeg');
+    background-image: url('asserts/index5.jpeg');
     width: 70%;
     height: 70%;
 }
